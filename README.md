@@ -12,7 +12,7 @@ Django sample application with github oauth and CRUD
 ##### Setting up virtual environemnt 
 - Make sure to install python3.5
 - Run the command : virtualenv .venv --python=python3.5
-- Command to activate virtual environment: source/<virtual environment name>/bin/activate
+- Command to activate virtual environment: source <virtual environment name>/bin/activate
 ##### Installing dependencies
 - Activate virtual environment
 - Run pip install -r requirements.txt
