@@ -1,0 +1,1 @@
+[{"model": "auth.user", "pk": 6, "fields": {"password": "!tbrmojb3maDvha2vss1W3HOR1iiKTyFgzbGaQQ9B", "last_login": null, "is_superuser": false, "username": "AshidaEKhader", "first_name": "", "last_name": "", "email": "ashidakhader@gmail.com", "is_staff": false, "is_active": true, "date_joined": "2020-05-06T10:01:57.842Z", "groups": [], "user_permissions": []}}]

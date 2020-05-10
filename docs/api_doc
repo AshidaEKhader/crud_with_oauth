@@ -1,0 +1,79 @@
+1) lOGIN API:
+
+URL : http://localhost:8000/login?user=<GIT HUB USER NAME>
+METHOD: GET
+RESPONSE STATUS : 200
+RESPONSE STRUCTURE : {"message":"access_token=<TOKEN>&scope=user&token_type=bearer"}
+
+N.B :  To get the token type the above URL in browser, then in the browser we get a response like above
+
+P.S: All CRUD API needs to add authorization header. i.e,
+in headers of all request set "Authorization": "Bearer github <token_got_after_login>"
+
+2) Create User API
+URL : http://localhost:8000/api/users/profile/create
+METHOD: POST
+REQUEST BODY : {
+    "first_name": "<fname>",
+    "last_name": "<lname>",
+    "email": "<email>",
+    "phone_number": "<valid ph no>",
+    "address": "<address>"
+}
+
+
+REQUEST HEADER: "Authorization": "Bearer github <token_got_after_login>"
+
+RESPONSE STATUS: 201
+RESPONSE STRUCTURE: {
+    "message": "User Profile Saved Successfully"
+}
+
+3)Read user API
+
+URL : http://localhost:8000/api/users/profile/retrieve
+METHOD: POST
+REQUEST BODY: {"uid": "<user_uid>"}
+REQUEST HEADER: "Authorization": "Bearer github <token_got_after_login>"
+RESPONSE STATUS: 200
+RESPONSE STRUCTURE: {
+    "uid": "<user_uid>",
+    "first_name": "<fname>",
+    "last_name": "<lname>",
+    "email": "<email>",
+    "phone_number": "<valid ph no>",
+    "address": "<address>"
+}
+
+4) Update user API
+
+URL : http://localhost:8000/api/users/profile/update
+METHOD: PUT
+REQUEST BODY :{ "uid": "<USER_UID>",
+    "first_name": "<fname>",
+    "last_name": "<lname>",
+    "email": "<email>",
+    "phone_number": "<valid ph no>",
+    "address": "<address>"
+}
+
+
+REQUEST HEADER: "Authorization": "Bearer github <token_got_after_login>"
+
+RESPONSE STATUS: 200
+RESPONSE STRUCTURE: {
+    "message": "User Profile Updated Successfully"
+}
+
+5) Delete API view
+
+URL : http://localhost:8000/api/users/profile/delete
+METHOD: DELETE
+REQUEST BODY : {"uid": <user_uid>"}
+
+REQUEST HEADER: "Authorization": "Bearer github <token_got_after_login>"
+
+RESPONSE STATUS: 200
+RESPONSE STRUCTURE: {
+    "message": "User Profile Deleted Successfully"
+}

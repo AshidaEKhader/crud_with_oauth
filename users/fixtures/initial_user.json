@@ -1,0 +1,1 @@
+[{"model": "social_django.usersocialauth", "pk": 2, "fields": {"user": 6, "provider": "github", "uid": "62403536", "extra_data": "{\"id\": 62403536, \"login\": \"AshidaEKhader\", \"auth_time\": 1588932834, \"access_token\": \"f7016a910810302e25bad3d2a9f37f4130ade485\", \"expires\": null, \"token_type\": null}"}}]
