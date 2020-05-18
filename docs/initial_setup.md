@@ -1,9 +1,17 @@
+# crud_with_oauth
+Django sample application with github oauth and CRUD
+
 ### Setting up in local machine
 - Clone from the repository.
+#: a) I used postgres as db, if you wanted to do the same
 - Install Postgres if Not installed already 
 - Change the settings in the settings.py 
 - Create database and user based on the settings
 - Grant all permissions for that user on that database
+#: b) if you wanted to use sqllite-
+-Remove the db settings from the settings.py(Specified in DATABASE)
+since the default db is sqllite and removing this will use the default DB.
+-No need to follow 'Creating local database'
 - Run the application 
 
 ##### Setting up virtual environemnt 
